@@ -125,7 +125,7 @@ function validPhone(str) {
   }
 }
 function sendInfo(phone, user, gclid) {
-  document.querySelectorAll(".pop_otp_1_1_0 .modal")[0].style.display = "block";
+  document.getElementById("pop_otp_1_1_0").style.display = "block";
   user_info.phone = phone.value;
   user_info.name = user.value;
   user_info.gclid = gclid.value;
@@ -167,10 +167,10 @@ const checkPhone = function () {
   }
 };
 
-//open popup otp
-document.getElementById("modal-close2").addEventListener("click", () => {
-  document.querySelectorAll(".pop_otp_1_1_0 .modal")[0].style.display = "none";
-});
+// //open popup otp
+// document.getElementById("modal-close2").addEventListener("click", () => {
+//   document.querySelectorAll(".pop_otp_1_1_0 .modal")[0].style.display = "none";
+// });
 
 //ceateOTP
 function createOTP(phone) {
@@ -207,3 +207,8 @@ const loading = function () {
     loginBtn.classList.add("loading");
   });
 };
+
+//popupotp
+document.getElementById("popup-close").addEventListener("click", () => {
+  document.getElementById("pop_otp_1_1_0").style.display = "none";
+});

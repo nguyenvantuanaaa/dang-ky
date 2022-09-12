@@ -13,7 +13,7 @@
         content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="facebook-domain-verification" content="uc5op39nax2wccyiwofwk8geln6caj" />
     <link type="image/x-icon" rel="shortcut icon" href="media/images/kn_favicon.ico">
-    <link rel="stylesheet" href="media/sass/style.css?ver=24">
+    <link rel="stylesheet" href="media/sass/style.css?ver=25">
 
 </head>
 
@@ -385,14 +385,12 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pop_otp_1_1_0">
+    <!-- <section class="pop_otp_1_1_0">
         <div class="pop_otp_1_1_0__box">
             <div class="modal" id="modal-otp">
                 <div class="modal-bg"></div>
@@ -432,6 +430,42 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section class="pop_otp_1_1_0" id="pop_otp_1_1_0">
+        <div class="pop_otp_1_1_0__wrapper">
+            <div class="pop_otp_1_1_0__close" id="popup-close">
+                <img width="30" height="30" src="media/images/popup-close.svg" alt="">
+            </div>
+            <p class="pop_otp_1_1_0__title">
+                Xác nhận thông tin
+            </p>
+            <div class="pop_otp_1_1_0__body">
+                <div class="pop_otp_1_1_0__heading">
+                    <p>Mã đã được gửi đến số điện thoại của bạn!</p>
+                    <span>Vui lòng nhập mã</span>
+                </div>
+                <div class="pop_otp_1_1_0__verify">
+                    <form id="codeverifyForm">
+                        <div id="listInputs">
+                            <input class="pop_otp_1_1_0__digit" id="verificationCodeDigit1" name="verificationCodeDigit"
+                                type="text" maxlength="1">
+                            <input class="pop_otp_1_1_0__digit" id="verificationCodeDigit2" name="verificationCodeDigit"
+                                type="text" maxlength="1">
+                            <input class=" pop_otp_1_1_0__digit" id="verificationCodeDigit3"
+                                name="verificationCodeDigit" type="text" maxlength="1">
+                            <input class="pop_otp_1_1_0__digit" id="verificationCodeDigit4" name="verificationCodeDigit"
+                                type="text" maxlength="1">
+                            <input class="pop_otp_1_1_0__digit" id="verificationCodeDigit5" name="verificationCodeDigit"
+                                type="text" maxlength="1">
+                            <input class="pop_otp_1_1_0__digit" id="verificationCodeDigit6" name="verificationCodeDigit"
+                                type="text" maxlength="1">
+                        </div>
+                        <button class="pop_otp_1_1_0__btn" type="button" id="verificationButton"
+                            onclick="codeverify();">Xác nhận</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="regft">
@@ -452,7 +486,7 @@
 <script type="text/javascript" src="https://benhvienthammykangnam.com.vn/css/custom_v2.js?v=220727"></script>
 <script type="text/javascript"
     src="https://benhvienthammykangnam.vn/quangcao247/contact/template/js/js.js?t=112346"></script>
-<script src="media/js/otp.js?ver=12"></script>
+<script src="media/js/otp.js?ver=13"></script>
 <script src="https://benhvienthammykangnam.com.vn/cp/api/send.js?v=3"></script>
 
 <script>

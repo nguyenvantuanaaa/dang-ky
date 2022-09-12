@@ -1,26 +1,21 @@
 .pop_otp_1_1_0 {
-    &__box {
-        .modal-close {
-            font-size: 23px;
-            position: absolute;
-            left: 94%;
-            top: 0;
-        }
-    }
-    .modal-box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    display: none;
+    z-index: 100;
+    &__wrapper {
+        background: #fff;
+        // margin-top: 10vh;
         max-width: 350px;
-        min-width: 310px;
-        @media (max-width: 280px) {
-            min-width: 250px;
-        }
-    }
-    .modal-title {
-        text-align: center;
-        font-weight: bold;
-    }
-    &__header {
-        display: flex;
-        align-items: center;
+        width: 90%;
+        margin: 10vh auto 0;
+        height: fit-content;
+        padding: 30px 10px 10px;
+        position: relative;
     }
     &__title {
         flex: 1;
@@ -33,13 +28,16 @@
     }
     &__heading {
         text-align: center;
+        margin-bottom: 10px;
+        p {
+            margin: 0;
+        }
     }
     &__close {
-        font-size: 24px;
         position: absolute;
-        left: 92%;
-        top: -6px;
         font-weight: bold;
+        right: 5px;
+        top: 5px;
     }
     &__digit {
         width: 11%;
