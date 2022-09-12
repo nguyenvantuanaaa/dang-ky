@@ -1,0 +1,246 @@
+body {
+  padding-top: 80px;
+}
+
+.header_1_1_0 {
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__section {
+    display: flex;
+    align-items: center;
+  }
+  &__main {
+    &.active {
+      display: block;
+      animation: animateleft 0.4s;
+    }
+  }
+  &__item {
+    // padding: 33px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #103867;
+    font-weight: 600;
+  }
+  &__list{
+    li{
+    margin-right: 20px;
+    }
+    a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #103867;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    a:hover::after,
+    a.active::after{
+        content: '';
+        width: 100%;
+       
+    }
+}
+  &__logo img {
+      width: 192px;
+      height: 55px;
+    display: block;
+  }
+  &__logo2 {
+    display: none;
+    img {
+      max-width: 70%;
+      margin: 20px 0 0 60px;
+    }
+  }
+  &__bg {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: opac 0.4s;
+    &.active {
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  &__logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  &__menu,
+  &__call {
+    position: absolute;
+    top: 8px;
+    display: none;
+  }
+  &__menu {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    left: -7px;
+    color: #00597d;
+    padding-right: 35px;
+    border-right: 1px solid #eee;
+  }
+  &__call {
+    width: 40px;
+    height: 40px;
+    right: -15px;
+  }
+  // &__item.active {
+  //   background-color: #eee;
+  // }
+  &__phone,
+  &__regist {
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    &:hover{
+      img{
+        animation: shake 1.5s;
+      }
+    }
+  }
+  &__phone {
+    display: flex;
+    background: #e5e7eb;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    a {
+      color: #194081;
+    }
+  }
+  &__phone:hover{
+    background: #ffffff;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  &__regist {
+    cursor: pointer;
+    background: #ef4444;
+    margin-left: 10px;
+    display: flex;
+    a {
+      color: #fff;
+    }
+  }
+  &__regist:hover{
+    background: #cc2020;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  @media (max-width: 1200px) {
+    background-color: #fff;
+    &__box {
+      display: block;
+    }
+    &__section {
+      display: block;
+      width: 100%;
+    }
+    &__main {
+      display: none;
+      width: 270px;
+      background: #fff;
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      overflow: auto;
+      padding-bottom: 20px;
+    }
+    &__item {
+      padding: 9px 12px;
+      display: block;
+      font-weight: 600;
+      border-top: 1px dotted #ccc;
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__logo2 {
+      display: block;
+    }
+    &__logo {
+      justify-content: center;
+      img {
+        height: 45px;
+      }
+    }
+    &__menu,
+    &__call {
+      display: flex;
+      align-items: center;
+    }
+    &__phone,
+    &__regist {
+      margin: 0 10px;
+      padding: 10px;
+      justify-content: center;
+    }
+    &__phone {
+      margin-bottom: 5px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__menu {
+      left: 20px;
+    }
+    &__call {
+      right: 5px;
+    }
+    &__regist {
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    &__phone {
+      margin-left: 5px;
+    }
+  }
+  @media (max-width: 428px) {
+    &__menu {
+      left: 16px;
+    }
+    &__call {
+      right: 15px;
+    }
+  }
+  @media (max-width: 280px) {
+    min-width: 280px;
+    &__main {
+      width: 230px;
+    }
+    &__logo img {
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.pop_regkn_1_1_0 {
+    &__box {
+        .modal-header {
+            padding: 0;
+            border-bottom: unset;
+        }
+        .modal-title {
+            text-align: center;
+            padding-top: 20px;
+            img {
+                margin-left: 30px;
+                width: 46%;
+            }
+        }
+        .modal-box {
+            max-width: 350px;
+            min-width: 310px;
+            @media (max-width: 280px) {
+                min-width: 250px;
+            }
+        }
+        .modal-close {
+            font-size: 23px;
+            line-height: 0.9;
+            margin-right: 9px;
+            margin-top: 5px;
+        }
+        .modal-body {
+            padding: 15px 26px 20px;
+        }
+    }
+    &__des {
+        padding: 12px 25px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #153d75;
+        p {
+            margin: 0;
+            @media (max-width: 428px) {
+                font-size: 15px;
+            }
+            @media (max-width: 280px) {
+                font-size: 18px;
+            }
+        }
+    }
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 13px;
+        padding: 7px 12px;
+        border: 2px solid #a6bcdb;
+        border-radius: 6px;
+    }
+    &__clicknow {
+        input {
+            width: 60%;
+            background: rgb(253, 72, 16);
+            background: linear-gradient(90deg, rgba(253, 72, 16, 1) 0%, rgba(254, 104, 30, 1) 75%, rgba(255, 114, 0, 1) 100%);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 10px auto 15px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            font-weight: bold;
+            @media (max-width: 280px) {
+                width: 80%;
+            }
+        }
+    }
+    &__contact {
+        text-align: center;
+        color: #696969;
+        font-size: 13px;
+        p {
+            margin: 6px 0 5px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #153d75;
+        }
+        a {
+            color: #fd4810;
+            // font-weight: 500;
+            border-bottom: 1px solid rgba(253, 152, 46, 1);
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        img {
+            margin-right: 5px;
+            width: 6%;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.pop_callkn_1_1_0 {
+    &__box {
+        .modal-header {
+            padding: 0;
+            border-bottom: unset;
+        }
+        .modal-title {
+            text-align: center;
+            padding-top: 20px;
+            .logo {
+                width: 46%;
+            }
+            img {
+                margin-left: 30px;
+            }
+        }
+        .modal-box {
+            max-width: 350px;
+            min-width: 300px;
+            @media (max-width: 280px) {
+                min-width: 250px;
+            }
+        }
+        .modal-close {
+            font-size: 23px;
+            line-height: 0.9;
+            margin-right: 9px;
+            margin-top: 5px;
+        }
+        .modal-body {
+            padding: 15px 25px;
+            @media (max-width: 767px) {
+                padding: 10px 25px;
+            }
+        }
+    }
+    &__heading {
+        padding: 0 22px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #5678a8;
+        margin: 0;
+        margin-top: 10px;
+        @media (max-width: 428px) {
+            font-size: 14px;
+        }
+    }
+    &__des {
+        padding: 0px 20px 10px;
+        color: #777;
+        font-weight: 600;
+        font-size: 14px;
+        span {
+            margin-left: 10px;
+        }
+    }
+    &__call {
+        margin-left: 0 !important;
+    }
+    &__phone {
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #153d75;
+            justify-content: center;
+            img {
+                width: 5%;
+                margin-right: 5px;
+                margin-left: 0 !important;
+            }
+            span {
+                font-size: 20px;
+                margin-left: 5px;
+                color: #fd4810;
+                text-decoration: revert;
+                text-decoration: underline;
+            }
+        }
+    }
+    .phone__error2 {
+        position: absolute;
+        bottom: 158px;
+        right: 40px;
+        font-size: 14px;
+        color: red;
+        display: none;
+        width: 100%;
+        @media (max-width: 414px) {
+            right: 58px;
+        }
+        @media (max-width: 320px) {
+            right: 40px;
+        }
+        @media (max-width: 280px) {
+            right: 28px;
+            font-size: 12px;
+        }
+    }
+    input {
+        width: 100%;
+        margin-bottom: 25px;
+        font-size: 13px;
+        padding: 8px 12px;
+        border: 2px solid #a6bcdb;
+        border-radius: 6px;
+        position: relative;
+    }
+    &__click {
+        input {
+            width: 65%;
+            background: rgb(253, 72, 16);
+            background: linear-gradient(
+                90deg,
+                rgba(253, 72, 16, 1) 0%,
+                rgba(254, 104, 30, 1) 75%,
+                rgba(255, 114, 0, 1) 100%
+            );
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 0px auto 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            font-weight: bold;
+            @media (max-width: 767px) {
+                width: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+    &__or {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        color: #5678a8;
+        font-weight: 500;
+    }
+    &__more {
+        width: 100%;
+        background: #0f93db;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0px auto 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        padding: 8px 12px;
+        align-items: center;
+        a {
+            margin-left: 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            border-bottom: 1px solid white;
+        }
+        img {
+            margin-left: 10px !important;
+            width: 8%;
+        }
+    }
+    .mb {
+        @media (max-width: 1920px) and (min-width: 768px) {
+            display: none !important;
+        }
+    }
+    .pc {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}

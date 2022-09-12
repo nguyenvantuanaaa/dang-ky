@@ -1,0 +1,51 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+%font1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.popup_person_1_0_0 {
+    position: fixed;
+    z-index: 14;
+    opacity: 0;
+    left: 20px;
+    bottom: 50px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background: #053D7C;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    &__pic {
+        width: 60px;
+        height: 60px;
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+    &__box {
+        padding-left: 15px;
+    }
+    &__name {
+        font-size: 14px;
+    }
+    &__ct,
+    &__time {
+        font-size: 13px;
+    }
+}
+
+@media #{$r414} {
+    .popup_person_1_0_0 {
+        display: none !important;
+    }
+}
