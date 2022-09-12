@@ -37,15 +37,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
           inputs[i].value = "";
           if (i !== 0) inputs[i - 1].focus();
         } else {
+          //check input cuoi
           if (i === inputs.length - 1 && inputs[i].value !== "") {
-            return true;
-          } else if (event.keyCode > 47 && event.keyCode < 58) {
+            console.log(111111);
+            // return true;
+            // alert('ban da nhap du. vui long')
+            // } else if (event.keyCode > 47 && event.keyCode < 58) {
+          } else if (!isNaN(inputs[i].value)) {
+            // check number
+            console.log("number");
             inputs[i].value = event.key;
-            if (i !== inputs.length - 1) inputs[i + 1].focus();
+            if (i !== inputs.length - 1) {
+              inputs[i + 1].focus();
+            } else {
+              console.log("het roi");
+              document.getElementById("verificationButton").focus();
+            }
             event.preventDefault();
           } else if (event.keyCode > 64 && event.keyCode < 91) {
-            inputs[i].value = String.fromCharCode(event.keyCode);
-            if (i !== inputs.length - 1) inputs[i + 1].focus();
+            // check text
+            // inputs[i].value = String.fromCharCode(event.keyCode);
+            // if (i !== inputs.length - 1) inputs[i + 1].focus();
             event.preventDefault();
           }
         }
