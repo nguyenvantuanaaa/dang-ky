@@ -3060,6 +3060,7 @@ ul.tabs li {
 .pop_otp_1_1_0 .modal-box {
   max-width: 350px;
   min-width: 310px;
+  height: 400px;
 }
 @media (max-width: 280px) {
   .pop_otp_1_1_0 .modal-box {
