@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
           } else if (event.keyCode > 47 && event.keyCode < 58) {
             inputs[i].value = event.key;
             if (i !== inputs.length - 1) inputs[i + 1].focus();
-            event.preventDefault();
+            // event.preventDefault();
           } else if (event.keyCode > 64 && event.keyCode < 91) {
             inputs[i].value = String.fromCharCode(event.keyCode);
             if (i !== inputs.length - 1) inputs[i + 1].focus();
-            event.preventDefault();
+            // event.preventDefault();
           }
         }
       });
