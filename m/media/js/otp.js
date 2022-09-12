@@ -125,6 +125,7 @@ function validPhone(str) {
   }
 }
 function sendInfo(phone, user, gclid) {
+  // document.getElementsByName("pop_callkn_1_1_0 modal").style.display = "none";
   document.getElementById("pop_otp_1_1_0").style.display = "block";
   user_info.phone = phone.value;
   user_info.name = user.value;

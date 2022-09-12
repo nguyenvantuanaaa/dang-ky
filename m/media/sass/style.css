@@ -2949,7 +2949,7 @@ ul.tabs li {
   background: rgba(0, 0, 0, 0.7);
   justify-content: center;
   display: none;
-  z-index: 100;
+  z-index: 901;
 }
 .pop_otp_1_1_0__wrapper {
   background: #fff;
