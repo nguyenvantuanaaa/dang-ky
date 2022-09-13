@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         } else {
           //check input cuoi
           if (i === inputs.length - 1 && inputs[i].value !== "") {
-            console.log(111111);
             // return true;
             // alert('ban da nhap du. vui long')
             // } else if (event.keyCode > 47 && event.keyCode < 58) {
